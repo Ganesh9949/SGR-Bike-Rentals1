@@ -1,0 +1,430 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------- Navigation Bar -------------------------- */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .menu-icon, nav .search-icon, nav .cancel-icon {
+  display: none;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .nav-items {
+  display: flex;
+}
+
+nav .nav-items li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav .nav-items li a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav .nav-items li a.active {
+  color: #ff0000;
+}
+
+nav .login {
+  color: white;
+  font-size: 20px;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav form button {
+  background: #ff0000;
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+nav form input:focus {
+  outline: none;
+}
+
+/* --------------- Banner Section --------------- */
+.banner {
+  background-color: #000;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.content1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.content1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.content1 h2 span {
+  color: #ff0000;
+}
+
+.content1 p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.content1 .btn {
+  background-color: #ff0000;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content1 .btn:hover {
+  background-color: #ff5555;
+}
+
+/* ------------------ Section 2 ------------------ */
+.section2 {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section2 h2 {
+  font-size: 36px;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.section2 p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.section2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section2 .card {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section2 .card:hover {
+  transform: translateY(-10px);
+}
+
+.section2 .imgBx img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.section2 .content2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.section2 .content2 h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.section2 .content2 p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.section2 a {
+  display: inline-block;
+  background-color: #ff0000;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.section2 a:hover {
+  background-color: #ff5555;
+}
+
+/* ------------------ Section 3 ------------------ */
+.section3 {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+}
+
+.section3 .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section3 .cell {
+  text-align: center;
+  padding: 20px;
+}
+
+.section3 .cell h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.section3 .cell p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.section3 .cell i {
+  font-size: 40px;
+  color: #ff0000;
+}
+
+/* ------------------ Testimonial Section ------------------ */
+.wrapper {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testimonial .item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.testimonial .content3 {
+  text-align: center;
+}
+
+.testimonial .content3 h1 {
+  font-size: 30px;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.testimonial .content3 p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ------------------ Footer Top Section ------------------ */
+.contact {
+  background-color: #333;
+  color: white;
+  padding: 50px 20px;
+}
+
+.contact .content4 h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact .content4 p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.contact .container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contact .contactinfo {
+  width: 50%;
+}
+
+.contact .contactform {
+  width: 50%;
+}
+
+.contact .contactinfo .box {
+  margin-bottom: 20px;
+}
+
+.contact .contactinfo .text {
+  font-size: 18px;
+}
+
+.contactform .inputBox {
+  margin-bottom: 20px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contactform .inputBox textarea {
+  height: 100px;
+}
+
+.contactform .inputBox input[type="submit"] {
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+}
+
+.contactform .inputBox input[type="submit"]:hover {
+  background-color: #ff5555;
+}
+
+/* ------------------ Footer Bottom Section ------------------ */
+.footer-distributed {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right a {
+  margin-right: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.footer-right a:hover {
+  color: #ff0000;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-left p a {
+  color: #ff0000;
+}
+
+.footer-left p a:hover {
+  color: #ff5555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .nav-items {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav .nav-items li {
+    margin-bottom: 10px;
+  }
+
+  nav form {
+    display: none;
+  }
+
+  nav .search-icon, nav .cancel-icon {
+    display: block;
+  }
+
+  .section2 .container {
+    flex-direction: column;
+  }
+
+  .section3 .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
